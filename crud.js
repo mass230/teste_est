@@ -126,7 +126,7 @@ function modificarUsuario() {
 
                         // Atualizar o arquivo JSON
                         fetch('http://127.0.0.1:5500/usuarios.json', {
-                            method: 'PUT', // Use o método PUT para atualizar o arquivo
+                            method: 'PUT', 
                             headers: {
                                 'Content-Type': 'application/json',
                             },
@@ -164,12 +164,12 @@ function deletarUsuario() {
             if (indice !== null) {
                 indice = parseInt(indice);
                 if (!isNaN(indice) && indice >= 0 && indice < dados.length) {
-                    // Remover o usuário do array local
+                   
                     dados.splice(indice, 1);
 
                     // Atualizar o arquivo JSON
                     fetch('http://127.0.0.1:5500/usuarios.json', {
-                        method: 'PUT', // Use o método PUT para atualizar o arquivo
+                        method: 'PUT', 
                         headers: {
                             'Content-Type': 'application/json',
                         },
